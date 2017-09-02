@@ -308,6 +308,10 @@ a {
   color: #617083;
   vertical-align: top;
 }
+.main-wrapper .card-list > ul > li.card-item .card-action.start > i:before {
+  content: "\f04b";
+  color: #617083;
+}
 .main-wrapper .card-list > ul > li.card-item .card-action.stop > i:before {
   content: "\f04d";
   color: #ff5a5a;
