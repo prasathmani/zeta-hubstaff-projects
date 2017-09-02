@@ -59,6 +59,10 @@ APP.MyFunction = (function (APP, $) {
     _renderCardItems = (data) => {
         let cardHtml = Handlebars.compile($("#card-items").html());
         $('.main-wrapper').html(cardHtml(data.result));
+
+        let projectHtml = Handlebars.compile($("#task-wrapper").html());
+        $('.task-wrapper').html(projectHtml(data.result.project));
+
         //register events
         wrapper.find('input.newcard').on('keyup', _addNewCard);
         wrapper.find('a.card-action').on('click', _toggleStatus);
