@@ -2,6 +2,13 @@
     "result": {
         "id": "59aa7e47c49823adfab548e1",
         "index": 0,
+        "project" : {
+            "title" : "Graphic Design",
+            "overdue" : 3,
+            "deadline": 4,
+            "currency": "200",
+            "currency1" : "450"
+        },
         "user": [
             "deserunt",
             "tempor",
