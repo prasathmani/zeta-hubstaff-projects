@@ -181,6 +181,12 @@ a {
   border-radius: 0;
   display: inline-block;
 }
+@media only screen and (max-width: 479px) {
+  .top-bar .task-wrapper .task-status > span {
+    display: block;
+    margin: 10px 0;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .top-bar .task-wrapper {
     margin-left: 7%;
@@ -190,6 +196,8 @@ a {
   .top-bar .task-wrapper {
     margin-left: 0;
     margin-bottom: 15px;
+    text-align: left;
+    clear: both;
   }
 }
 .top-bar .status-menu .tracking-time {
