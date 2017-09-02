@@ -15,6 +15,7 @@ APP.MyFunction = (function (APP, $) {
         _renderCardItems,
         _onPageLoad,
         _addNewUser,
+        _toggleStatus,
         _addNewCard;
 
     /**
@@ -57,8 +58,10 @@ APP.MyFunction = (function (APP, $) {
      */
     _renderCardItems = (data) => {
         let cardHtml = Handlebars.compile($("#card-items").html());
-        $('.main-wrapper').html(cardHtml(data.result)); 
+        $('.main-wrapper').html(cardHtml(data.result));
+        //register events
         wrapper.find('input.newcard').on('keyup', _addNewCard);
+        wrapper.find('a.card-action').on('click', _toggleStatus);
     };
 
     /**
@@ -97,6 +100,19 @@ APP.MyFunction = (function (APP, $) {
         let count = $this.closest('ul').data('count');
         $this.closest('ul').data('count', count + 1);
         $('.user-count').html(count+1);
+    };
+
+    /**
+     * This is the _toggleStatus method
+     * @return {void}
+     */
+    _toggleStatus = (e) => {
+        let $this = $(e.currentTarget);
+        if($this.hasClass('start')) {
+            $this.addClass('stop').removeClass('start');
+        } else {
+            $this.addClass('start').removeClass('stop');
+        }
     };
 
     init = () => {
