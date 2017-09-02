@@ -105,6 +105,15 @@
     </div>
     <!-- /.container -->
 
+<script id="task-wrapper" type="text/x-handlebars-template">
+    <div class="task-title">{{title}}</div>
+    <div class="task-status">
+        <span> <i></i> {{overdue}} overdue</span>
+        <span> <i></i> {{deadline}} Approaching deadline</span>
+        <span class="icon-money"> <i class="fa fa-money" aria-hidden="true"></i> <b>${{currency}}</b> / ${{currency1}}</span>
+    </div>
+</script>
+
     <script id="card-items" type="text/x-handlebars-template">
     {{#each cardItems}}
         {{#each this}} 
