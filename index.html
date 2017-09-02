@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hubstaff Projects</title>
+
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <div class="row header">
+        <div class="container">
+            <div class="left">
+                <a href="#/logo">
+                    <img src="assets/images/hp-logo.png" alt="Hubstaff Projects">
+                </a>
+            </div>
+            <div class="right profile">
+                <div class="left p-lr-30"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="left p-lr-30"><i class="fa fa-bell-o" aria-hidden="true"></i></div>
+                <div class="left">
+                    <img src="assets/images/img-2.png" alt="Profile" class="img profile-thumb">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- top bar -->
+    <div class="row top-bar">
+        <div class="container">
+            <div class="left">
+                <ul class="user-list-item">
+                    <li>
+                        <a href="#/addNewItem">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/username-1025">
+                            <img src="assets/images/img-1.png" alt="Mottotva Burz">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/username-1025">
+                            <img src="assets/images/img-2.png" alt="Mottotva Burz">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/username-1025">
+                            <img src="assets/images/img-3.png" alt="Mottotva Burz">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/addNewItem">
+                            <i class="fa fa-plus" aria-hidden="true"></i> 42
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="left task-wrapper">
+                <div class="task-title">Graphic Design</div>
+                <div class="task-status">
+                    <span> <i></i> 3 overdue</span>
+                    <span> <i></i> 4 Approaching deadline</span>
+                    <span class="icon-money"> <i class="fa fa-money" aria-hidden="true"></i> <b>$200</b> / $450</span>
+                </div>
+            </div>
+
+            <div class="right status-menu">
+                <div class="tracking-time left">
+                    Tracking time on <b>2 cards</b> <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <div class="toggle-menu left">
+                    <a href="#/openMenu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    
+    <!-- Page Content -->
+    <div class="main-container">
+    <div class="container">
+        <div class="main-wrapper">
+           
+        </div>
+    </div>
+    </div>
+    <!-- /.container -->
+
+    <script id="card-items" type="text/x-handlebars-template">
+    {{#each cardItems}}
+        {{#each this}} 
+            <div class="card-list left">
+                <ul>
+            <li class="card-title card-{{color}}">
+                        {{title}}
+                        <a href="#/openMore">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="addcard">
+                        <input type="text" name="addcard" class="newcard" placeholder="Add a card... (enter key to save card)" required>
+                    </li>
+
+                    {{#each items}}
+                    <li class="card-item card-{{color}}">
+                        <div class="row">
+                            <div class="left">
+                                <img src="{{image}}" alt="my photo">
+                            </div>
+                            <div class="left card-content">
+                                {{content}}
+                            </div>
+                            <div class="right">
+                                <a href="#/action" class="card-action {{action}}">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/each}}
+    {{/each}}
+    </script>
+
+    <script id="new-card" type="text/x-handlebars-template">
+            <li class="card-item card-{{color}}">
+                <div class="row">
+                    <div class="left">
+                        <img src="{{image}}" alt="my photo">
+                    </div>
+                    <div class="left card-content">
+                        {{content}}
+                    </div>
+                    <div class="right">
+                        <a href="#/action" class="card-action {{action}}">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/handlebars.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

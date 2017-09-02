@@ -1,0 +1,190 @@
+{
+    "result": {
+        "id": "59aa7e47c49823adfab548e1",
+        "index": 0,
+        "user": [
+            "deserunt",
+            "tempor",
+            "dolore",
+            "aute",
+            "commodo",
+            "reprehenderit",
+            "velit"
+        ],
+        "cardItems": {
+                "Ideas/Tasks": [
+                    {
+                        "title":"Ideas/Tasks",
+                        "color":"blue",
+                        "action":"#/showMoreView",
+                        "items" : [
+                            {
+                                "id": 2555,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 9852,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "green",
+                                "action": "stop",
+                                "link": "#/goTo/2555",
+                                "color": "red"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            }
+
+                        ]
+                    }
+                ],
+                "In Progress": [{
+                        "title": "In Progress",
+                        "color": "yellow",
+                        "action": "#/showMoreView",
+                        "items": [
+                            {
+                                "id": 2555,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "stop",
+                                "link": "#/goTo/2555",
+                                "color": "red"
+                            },
+                            {
+                                "id": 9852,
+                                "image": "assets/images/img-3.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "green",
+                                "action": "stop",
+                                "link": "#/goTo/2555",
+                                "color": "yellow"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            }
+                        ]
+                    }
+                ],
+                "Ready for review": [
+                    {
+                        "title": "Ready for review",
+                        "color": "cyan",
+                        "action": "#/showMoreView",
+                        "items": [
+                            {
+                                "id": 2555,
+                                "image": "assets/images/img-3.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 9852,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "green",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "red"
+                            },
+                            {
+                                "id": 858786,
+                                "image": "assets/images/img-2.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "stop",
+                                "link": "#/goTo/2555",
+                                "color": "red"
+                            }
+                        ]
+                    }
+                ],
+                "Approved": [
+                    {
+                        "title": "Approved",
+                        "color": "green",
+                        "action": "#/showMoreView",
+                        "items": [
+                            {
+                                "id": 2555,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "green"
+                            },
+                            {
+                                "id": 9852,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "green",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "yellow"
+                            },
+                            {
+                                "id": 25445,
+                                "image": "assets/images/img-1.png",
+                                "content": "Lorem Ipsum is simply dummy text of the printing here",
+                                "statusColor": "red",
+                                "action": "start",
+                                "link": "#/goTo/2555",
+                                "color": "red"
+                            }
+                        ]
+                    }
+                ]
+            },
+        "trackingTime": "2 cards",
+        "overdue": "3"
+    }
+}

@@ -1,0 +1,281 @@
+@import "config";
+@import "common";
+.header {
+    padding: 15px;
+    height: 30px;
+    border-bottom: 1px solid #cccccc;
+    .profile {
+        .profile-thumb {
+            border-radius: 50%;
+            border: 0;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            margin-top: -5px;
+            float: left;
+            &~i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.top-bar {
+    padding: 20px 0;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(204,204,204,1);
+    box-shadow: 0px 4px 5px 0px rgba(204,204,204,1);
+    display: flex;
+
+    > .left {
+        @media @smartphones {
+            float: none;
+        }
+    }
+    .user-list-item {
+        margin: 0;
+        padding: 0;
+        >li {
+            &:first-child {
+                border: 1px dashed #a9b7cb;
+                vertical-align: top;
+                text-align: center;
+                color: #a9b7cb;
+                a {
+                    color: #a9b7cb;
+                    padding-top: 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+            }
+            &:last-child {
+                border: 1px solid @green;
+                color: @green;
+                text-align: center;
+                vertical-align: top;
+                font-size: 10px;
+                a {
+                    color: @green;
+                    padding-top: 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+            }
+            display: inline-block;
+            list-style: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            margin: 0 5px;
+            >a {
+                >img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+
+        @media @smartphones {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    .task-wrapper {
+        text-align: center;
+        .task-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            text-align: center
+        }
+
+        .task-status {
+            color: @blue;
+            margin-top: 5px;
+            > span {
+                margin: 0 10px;
+
+                > i {
+                    width: 10px;
+                    height: 10px;
+                    background: @red;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+
+                &:nth-child(2) {
+                    > i {
+                        background: @yellow;
+                    }
+                }
+
+                &.icon-money {
+                    color: #7a8da4;
+                    > b {
+                        font-weight: normal;
+                        color: @green;
+                    }
+                    > i {
+                        width: auto;
+                        height: auto;
+                        background: transparent;
+                        border-radius: 0;
+                        display: inline-block; 
+                    }
+                }
+            }
+        }
+
+        margin-left: 12%;
+        @media @tablets {
+            margin-left: 7%;
+        }
+        @media @smartphones {
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .status-menu {
+
+        .tracking-time {
+            background: #f0f4f9;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        .toggle-menu {
+            a {
+                color: #586b82;
+            }
+            font-size: 1.8em;
+            margin-left: 30px;
+        }
+
+        @media @smartphones {
+            float: none;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+.main-container {
+    background: #f2f6fa;
+}
+
+.main-wrapper {
+    padding: 25px 0;
+    display: flex;
+
+    @media @smartphones {
+        display: block;
+    }
+    
+    .card-list {
+        display: flex;
+        margin: 10px 10px 10px 0;
+        @media @smartphones {
+            display: block;
+            float: none;
+            width: 100%;
+        }
+
+       > ul {
+            margin: 0;
+            padding: 0;
+        > li {
+            
+               &.card-title {
+                  
+                &.card-red {
+            background: @red !important;
+            }
+            &.card-yellow {
+            background: @yellow !important;
+            }
+            &.card-green {
+            background: @green !important;
+            }
+            &.card-cyan {
+            background: @cyan !important;
+            }
+
+                   background: @blue;
+                   padding: 20px;
+                   text-transform: uppercase;
+                   color: @white;
+                   font-weight: bold;
+   
+                   > a {
+                       color: @white;
+                       i {
+                           float: right;
+                       }
+                   }
+               }
+
+               &.addcard {
+                  input {
+                      padding: 20px;
+                      width: 84%;
+                  }
+               }
+
+               &.card-item {
+                   &.card-red {
+                       border-left: 3px solid @red !important;
+                   }
+                   &.card-yellow {
+                       border-left: 3px solid @yellow !important;
+                   }
+                   &.card-green {
+                       border-left: 3px solid @green !important;
+                   }
+                   &.card-cyan {
+                       border-left: 3px solid @cyan !important;
+                   }
+                   .row {
+                       width: 100%;
+                   }
+                   padding: 20px;
+                   display: flex;
+                   img {
+                       width: 15px;
+                       height: 15px;
+                       border-radius: 50%;
+                       vertical-align: top;
+                   }
+
+                   .card-content {
+                    margin: 0 5px;
+                    width: 82%;
+                    vertical-align: top;
+                   }
+
+                   .card-action {
+                       color: #617083;
+                       vertical-align: top;
+                       &.stop {
+                           >i {
+                               &:before {
+                                    content: "\f04d";
+                                    color: @red;
+                               }
+                           }
+                       }
+                   }
+               }
+               
+               display: block;
+               list-style: none;
+               margin-bottom: 10px;
+               background: @white;
+               border: 1px solid #ecf1f5;
+
+           }
+       }
+
+       width: 30%;
+    }
+}

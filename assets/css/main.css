@@ -1,0 +1,311 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 13px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+a {
+  color: #65affd;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.p30 {
+  padding: 30px;
+}
+.p-lr-10 {
+  padding: 0 10px;
+}
+.p-lr-30 {
+  padding: 0 10px;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  padding: 15px;
+  height: 30px;
+  border-bottom: 1px solid #cccccc;
+}
+.header .profile .profile-thumb {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin-top: -5px;
+  float: left;
+}
+.header .profile .profile-thumb ~ i {
+  margin-left: 5px;
+}
+.top-bar {
+  padding: 20px 0;
+  -webkit-box-shadow: 0px 4px 5px 0px #cccccc;
+  -moz-box-shadow: 0px 4px 5px 0px #cccccc;
+  box-shadow: 0px 4px 5px 0px #cccccc;
+  display: flex;
+}
+@media only screen and (max-width: 479px) {
+  .top-bar > .left {
+    float: none;
+  }
+}
+.top-bar .user-list-item {
+  margin: 0;
+  padding: 0;
+}
+.top-bar .user-list-item > li {
+  display: inline-block;
+  list-style: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+}
+.top-bar .user-list-item > li:first-child {
+  border: 1px dashed #a9b7cb;
+  vertical-align: top;
+  text-align: center;
+  color: #a9b7cb;
+}
+.top-bar .user-list-item > li:first-child a {
+  color: #a9b7cb;
+  padding-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.top-bar .user-list-item > li:last-child {
+  border: 1px solid #4dd87a;
+  color: #4dd87a;
+  text-align: center;
+  vertical-align: top;
+  font-size: 10px;
+}
+.top-bar .user-list-item > li:last-child a {
+  color: #4dd87a;
+  padding-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.top-bar .user-list-item > li > a > img {
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (max-width: 479px) {
+  .top-bar .user-list-item {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.top-bar .task-wrapper {
+  text-align: center;
+  margin-left: 12%;
+}
+.top-bar .task-wrapper .task-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+.top-bar .task-wrapper .task-status {
+  color: #55a8fd;
+  margin-top: 5px;
+}
+.top-bar .task-wrapper .task-status > span {
+  margin: 0 10px;
+}
+.top-bar .task-wrapper .task-status > span > i {
+  width: 10px;
+  height: 10px;
+  background: #ff5a5a;
+  border-radius: 50%;
+  display: inline-block;
+}
+.top-bar .task-wrapper .task-status > span:nth-child(2) > i {
+  background: #ffbe6a;
+}
+.top-bar .task-wrapper .task-status > span.icon-money {
+  color: #7a8da4;
+}
+.top-bar .task-wrapper .task-status > span.icon-money > b {
+  font-weight: normal;
+  color: #4dd87a;
+}
+.top-bar .task-wrapper .task-status > span.icon-money > i {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .top-bar .task-wrapper {
+    margin-left: 7%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .top-bar .task-wrapper {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+.top-bar .status-menu .tracking-time {
+  background: #f0f4f9;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.top-bar .status-menu .toggle-menu {
+  font-size: 1.8em;
+  margin-left: 30px;
+}
+.top-bar .status-menu .toggle-menu a {
+  color: #586b82;
+}
+@media only screen and (max-width: 479px) {
+  .top-bar .status-menu {
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+.main-container {
+  background: #f2f6fa;
+}
+.main-wrapper {
+  padding: 25px 0;
+  display: flex;
+}
+@media only screen and (max-width: 479px) {
+  .main-wrapper {
+    display: block;
+  }
+}
+.main-wrapper .card-list {
+  display: flex;
+  margin: 10px 10px 10px 0;
+  width: 30%;
+}
+@media only screen and (max-width: 479px) {
+  .main-wrapper .card-list {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+.main-wrapper .card-list > ul {
+  margin: 0;
+  padding: 0;
+}
+.main-wrapper .card-list > ul > li {
+  display: block;
+  list-style: none;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #ecf1f5;
+}
+.main-wrapper .card-list > ul > li.card-title {
+  background: #55a8fd;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+.main-wrapper .card-list > ul > li.card-title.card-red {
+  background: #ff5a5a !important;
+}
+.main-wrapper .card-list > ul > li.card-title.card-yellow {
+  background: #ffbe6a !important;
+}
+.main-wrapper .card-list > ul > li.card-title.card-green {
+  background: #4dd87a !important;
+}
+.main-wrapper .card-list > ul > li.card-title.card-cyan {
+  background: #8f7ee5 !important;
+}
+.main-wrapper .card-list > ul > li.card-title > a {
+  color: #ffffff;
+}
+.main-wrapper .card-list > ul > li.card-title > a i {
+  float: right;
+}
+.main-wrapper .card-list > ul > li.addcard input {
+  padding: 20px;
+  width: 84%;
+}
+.main-wrapper .card-list > ul > li.card-item {
+  padding: 20px;
+  display: flex;
+}
+.main-wrapper .card-list > ul > li.card-item.card-red {
+  border-left: 3px solid #ff5a5a !important;
+}
+.main-wrapper .card-list > ul > li.card-item.card-yellow {
+  border-left: 3px solid #ffbe6a !important;
+}
+.main-wrapper .card-list > ul > li.card-item.card-green {
+  border-left: 3px solid #4dd87a !important;
+}
+.main-wrapper .card-list > ul > li.card-item.card-cyan {
+  border-left: 3px solid #8f7ee5 !important;
+}
+.main-wrapper .card-list > ul > li.card-item .row {
+  width: 100%;
+}
+.main-wrapper .card-list > ul > li.card-item img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.main-wrapper .card-list > ul > li.card-item .card-content {
+  margin: 0 5px;
+  width: 82%;
+  vertical-align: top;
+}
+.main-wrapper .card-list > ul > li.card-item .card-action {
+  color: #617083;
+  vertical-align: top;
+}
+.main-wrapper .card-list > ul > li.card-item .card-action.stop > i:before {
+  content: "\f04d";
+  color: #ff5a5a;
+}

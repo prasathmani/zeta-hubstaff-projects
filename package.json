@@ -1,0 +1,18 @@
+{
+  "name": "zeta",
+  "version": "1.0.0",
+  "description": "Zeta Interview test",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "h3k"
+  },
+  "author": "Prasath Mani",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
