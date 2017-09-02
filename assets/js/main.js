@@ -14,6 +14,7 @@ APP.MyFunction = (function (APP, $) {
         wrapper = $('.main-container'),
         _renderCardItems,
         _onPageLoad,
+        _addNewUser,
         _addNewCard;
 
     /**
@@ -25,7 +26,7 @@ APP.MyFunction = (function (APP, $) {
         _onPageLoad();
 
         //Events
-        // wrapper.find('input.newcard').on('keyup', _addNewCard);
+        $('a.add-new-user').on('click', _addNewUser);
     };
 
     /**
@@ -60,6 +61,10 @@ APP.MyFunction = (function (APP, $) {
         wrapper.find('input.newcard').on('keyup', _addNewCard);
     };
 
+    /**
+     * This is the _addNewCard method
+     * @return {void}
+     */
     _addNewCard = (e) => {
         if (e.keyCode == 13) {
             let $this = $(e.currentTarget);
@@ -79,6 +84,19 @@ APP.MyFunction = (function (APP, $) {
             }
         }
         
+    };
+
+    /**
+     * This is the _addNewUser method
+     * @return {void}
+     */
+    _addNewUser = (e) => {
+        let $this = $(e.currentTarget);
+        let newUserHtml = `<li class="hidden"><a href="#/username-9985"><img src="assets/images/img-2.png" alt="Mottotva"></a> </li>`;
+        $this.closest('ul').find(' > li:last-child').before(newUserHtml);
+        let count = $this.closest('ul').data('count');
+        $this.closest('ul').data('count', count + 1);
+        $('.user-count').html(count+1);
     };
 
     init = () => {
