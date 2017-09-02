@@ -142,6 +142,9 @@
             background: #f0f4f9;
             border-radius: 20px;
             padding: 5px 10px;
+            > i {
+                color: @blue;
+            }
         }
 
         .toggle-menu {
@@ -256,6 +259,14 @@
                    .card-action {
                        color: #617083;
                        vertical-align: top;
+                       &.start {
+                           >i {
+                               &:before {
+                                    content: "\f04b";
+                                    color: #617083;
+                               }
+                           }
+                       }
                        &.stop {
                            >i {
                                &:before {
